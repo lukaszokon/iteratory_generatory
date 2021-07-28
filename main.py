@@ -12,9 +12,8 @@ if __name__ == '__main__':
     # a = {'imie': 'Adam', 'nazwisko': 'Kowalski', 'wiek': 25}
     # for item in a:
     #     print(item)
-
-    # iter = primes.get_n_primes(1000000)
-    # iter = primes.PrimeIterator(1000000)
-    iter = primes.prime_generator(1000000)
+    iter = primes.fibonacii(100)
     for liczba in iter:
         print(liczba)
+    # for liczba in iter:
+    #     print(liczba)

@@ -1,6 +1,29 @@
 from math import sqrt
 
 
+def fibonacii(n):
+    yield 0
+    yield 1
+    liczba_poprzednia = 0
+    liczba = 1
+    ilosc_wygenerowanych = 2
+    while ilosc_wygenerowanych < n:
+        nowa_liczba = liczba + liczba_poprzednia
+        liczba_poprzednia = liczba
+        liczba = nowa_liczba
+        yield nowa_liczba
+        ilosc_wygenerowanych += 1
+
+
+def parzyste(n):
+    liczba = 0
+    ilosc_wygenerowanych = 0
+    while ilosc_wygenerowanych < n:
+        liczba += 2
+        yield liczba
+        ilosc_wygenerowanych += 1
+
+
 def prime_generator(n):
     number = 2
     generated_numbers = 0
