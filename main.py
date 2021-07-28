@@ -12,7 +12,7 @@ if __name__ == '__main__':
     # a = {'imie': 'Adam', 'nazwisko': 'Kowalski', 'wiek': 25}
     # for item in a:
     #     print(item)
-    iter = primes.fibonacii(100)
+    iter = primes.get_csv_data('data.csv')
     for liczba in iter:
         print(liczba)
     # for liczba in iter:

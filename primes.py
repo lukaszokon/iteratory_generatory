@@ -1,4 +1,13 @@
 from math import sqrt
+import csv
+
+
+def get_csv_data(filename: str):
+    with open(filename, 'r') as f:
+        reader = csv.reader(f)
+        for row in reader:
+            for value in row:
+                yield value
 
 
 def fibonacii(n):
