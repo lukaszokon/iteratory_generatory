@@ -7,6 +7,6 @@ if __name__ == '__main__':
     for litera in a:
         print(litera)
 
-    a = {'imie': 'Adam', 'nazwisko': 'Kowalski'}
+    a = {'imie': 'Adam', 'nazwisko': 'Kowalski', 'wiek': 25}
     for item in a:
         print(item)
