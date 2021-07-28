@@ -13,6 +13,8 @@ if __name__ == '__main__':
     # for item in a:
     #     print(item)
 
-    lista = primes.get_n_primes(100000)
-    for liczba in lista:
+    # iter = primes.get_n_primes(1000000)
+    # iter = primes.PrimeIterator(1000000)
+    iter = primes.prime_generator(1000000)
+    for liczba in iter:
         print(liczba)
